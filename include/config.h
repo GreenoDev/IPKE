@@ -97,6 +97,17 @@
 // Some forms only exist in their debut games, with accompying mechanics. IMPLEMENT_GONE_SPECIES_MECHANICS lets these forms' mechanics coexist with the latest mechanics. Examples include Noble Pokémon
 #define IMPLEMENT_DEXIT_FORMS_MECHANICS
 
+// IMPLEMENT_SCALING defines whether or not dynamic level scaling of wild pokemon and enemy trainers is implemented, and provides a variable to allow for user selection of different implementations (WIP)
+// Need to add script to ask/set variable
+// 0 = Do Not Scale; 1 = Scale Up Wild and Trainer pokemon
+// Trainers will only scale up, if levels in trainers.s are higher they will remain the same.
+// uncommenting IMPLEMENT_SCALING enables dynamic scaling.  Undefining SCALING_TYPE_VARIABLE will just cause compilation errors
+#define IMPLEMENT_SCALING
+#define SCALING_TYPE_VARIABLE 0x406A
+
+
+
+
 // EXPAND_PC_BOXES will expand the amount of pc boxes if enabled to 30
 // comment out the line below to keep the max at 18
 #define EXPAND_PC_BOXES
