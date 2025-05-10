@@ -103,7 +103,7 @@
 // Trainers will only scale up, if levels in trainers.s are higher they will remain the same.
 // uncommenting IMPLEMENT_SCALING enables dynamic scaling.  Undefining SCALING_TYPE_VARIABLE will just cause compilation errors
 #define IMPLEMENT_SCALING
-#define SCALING_TYPE_VARIABLE 0x406A
+#define SCALING_TYPE_VARIABLE 1
 
 
 
